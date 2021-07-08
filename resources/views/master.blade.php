@@ -8,6 +8,9 @@
 
     {{-- css cdn --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    {{-- Fontaewsome --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -21,7 +24,7 @@
     <style>
 
         .cont-height {
-            /* min-height: 85vh; */
+            min-height: 85vh;
         }
 
         img.slider-img {
@@ -41,6 +44,7 @@
         .custom-bgc {
             /* background-color: lightseagreen; */
             background-color: #5f9ea038;  /* traparent cadetblue */
+            
         }
 
         .trending-bgc {
@@ -52,9 +56,22 @@
             overflow: hidden;
         }
 
+        .details-img {
+
+            width: 100%;
+            max-height: 300vh;
+            object-fit: cover;
+            overflow: hidden;
+
+        }
+
+        .cart-img {
+
+            max-height: 20vh;
+        } 
+
     </style>
     
-
 
 
 

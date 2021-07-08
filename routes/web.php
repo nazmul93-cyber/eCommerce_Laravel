@@ -23,3 +23,12 @@ Route::get('/login', function () {
 
 Route::post('/login',[UserController::class,'login']);
 Route::get('/',[ProductController::class,'index']); 
+Route::get('/details/{id}',[ProductController::class,'details']); 
+Route::post('/search',[ProductController::class,'search']); 
+Route::get('/search', function() {
+    return redirect('/');
+});
+Route::post('/add_to_cart',[ProductController::class,'addToCart']);
+Route::get('/logout',[ProductController::class,'logout']);
+Route::get('/cartlist',[ProductController::class,'cartList']);
+Route::get('/removecart/{id}',[ProductController::class,'removeCart']);

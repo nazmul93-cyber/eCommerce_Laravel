@@ -29,9 +29,18 @@
 
                 @foreach($passKey as $product)
                     <div class="carousel-item {{$product->id==1?'active':''}}">
-                        <img src="{{ $product->gallery }}" class="d-block m-auto slider-img" alt="...">
-                        <h3 class="ml-4" >{{ $product->name }}</h3>
-                        <p class="ml-4" >{{ $product->description }}</p>
+                        <a href="/details/{{ $product->id }}">
+                          <img src="{{ $product->gallery }}" class="d-block m-auto slider-img" alt="...">
+                        </a>
+                        
+
+                        <div class="card">
+                          <div class="card-body" style="background:#5f9ea05e;">
+                            <h3 style="text-align: center" >{{ $product->name }}</h3>
+                            <p style="text-align: center" >{{ $product->description }}</p>
+                          </div>
+                        </div>
+                       
                     </div>
                 @endforeach
 
@@ -63,7 +72,10 @@
             <h3 class="mx-4 my-2">Trending Products</h3>
             @foreach($passKey as $product)
               <div class="trending-items">
-                <img src="{{ $product->gallery }}" class="d-block m-auto slider-img" alt="...">
+                <a href="/details/{{ $product->id }}">
+                  <img src="{{ $product->gallery }}" class="d-block m-auto slider-img" alt="...">
+                </a>
+                
                 <h3 class="ml-4" >{{ $product->name }}</h3>
               </div>
                
