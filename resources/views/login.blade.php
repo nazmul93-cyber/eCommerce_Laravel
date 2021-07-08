@@ -5,19 +5,19 @@
 {{-- <h1>Login Page</h1>
 <button class="btn btn-primary">click on me</button> checking css --}}
 
-    <div class="container" style="height:85vh;">
+    <div class="container cont-height">
 
         <div class="row justify-content-sm-center">
 
             <div class="col-sm-4">
 
-                <form>
-
+                <form action="/login" method="POST">
+                  @csrf
                     <div class="form-group">
                 
                       <label for="exampleInputEmail1">Email address</label>
                 
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 
                       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 
@@ -27,7 +27,7 @@
                 
                       <label for="exampleInputPassword1">Password</label>
                 
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 
                     </div>
                 
@@ -39,7 +39,7 @@
                 
                     </div> --}}
                 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
                 
                   </form>
 

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 //custom
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,4 @@ Route::get('/login', function () {
 });
 
 Route::post('/login',[UserController::class,'login']);
-
-
-// root route will be use for product page later
+Route::get('/',[ProductController::class,'index']); 

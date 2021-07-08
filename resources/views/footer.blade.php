@@ -1,4 +1,4 @@
-<div class="card text-center">
+<div class="card text-center" style="clear:both;">
 
     {{-- <div class="card-header">
       Featured
@@ -11,6 +11,6 @@
     </div>
      --}}
     <div class="card-footer text-muted">
-      2 days ago
+      eCommerce site - A product made using Laravel by NazmulAlam
     </div>
 </div>

@@ -16,6 +16,43 @@
     @yield("content")
     {{ View::make("footer")}}
     {{-- @include('footer') --}}
+
+
+    <style>
+
+        .cont-height {
+            /* min-height: 85vh; */
+        }
+
+        img.slider-img {
+
+            max-height:40vh !important;
+        }
+
+        /* .custom-indicator-color > li{
+            background: #000 !important;
+            height: 0px;
+        }
+
+        .custom-icon-color {
+            color: #000;
+        } */
+
+        .custom-bgc {
+            /* background-color: lightseagreen; */
+            background-color: #5f9ea038;  /* traparent cadetblue */
+        }
+
+        .trending-bgc {
+            background-color: #fff;
+        }
+        .trending-items {
+            width: 20%;
+            float: left;
+            overflow: hidden;
+        }
+
+    </style>
     
 
 
@@ -46,5 +83,7 @@
             });
         });
     </script>    --}}
+
+   
 </body>
 </html>
