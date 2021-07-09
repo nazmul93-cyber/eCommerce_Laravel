@@ -21,6 +21,9 @@ class UserAuth
         if($request->path() == "login" && $request->session()->has("user")) {
 
                 return redirect("/");
+        }elseif($request->path() == "register" && $request->session()->has("user")) {
+
+                return redirect("/");
         }
         
         

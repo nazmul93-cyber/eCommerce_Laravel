@@ -17,18 +17,45 @@ use App\Http\Controllers\ProductController;
 |
 */
 
+// registration - login
+Route::get('/register', function () {
+    return view('register');
+});
+Route::post('/register',[UserController::class,'register']);
+
 Route::get('/login', function () {
     return view('login');
 });
-
 Route::post('/login',[UserController::class,'login']);
+
+
+
+
+
+// home - details - logout
 Route::get('/',[ProductController::class,'index']); 
 Route::get('/details/{id}',[ProductController::class,'details']); 
+Route::get('/logout',[ProductController::class,'logout']);
+
+
+
+
+// serach
 Route::post('/search',[ProductController::class,'search']); 
 Route::get('/search', function() {
     return redirect('/');
 });
+
+
+
+// cart
 Route::post('/add_to_cart',[ProductController::class,'addToCart']);
-Route::get('/logout',[ProductController::class,'logout']);
 Route::get('/cartlist',[ProductController::class,'cartList']);
 Route::get('/removecart/{id}',[ProductController::class,'removeCart']);
+
+
+
+// order
+Route::get('/ordernow',[ProductController::class,'orderNow']);
+Route::post('/orderplace',[ProductController::class,'orderPlace']);
+Route::get('/myorders',[ProductController::class,'myOrders']);

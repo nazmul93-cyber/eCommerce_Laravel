@@ -12,6 +12,8 @@
             <h5 class="mx-4 my-2">{{ count($passKey)}} products in your cart 
 
                 <a style="text-decoration:none;color:#666;" href="#" class="mx-4 my-2">Filter</a>
+                <a href="/ordernow" class="ml-4 my-4 btn btn-success">Order Now</a>
+
             </h5>
        
            

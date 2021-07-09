@@ -37,7 +37,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Orders</a>
+                    <a class="nav-link" href="/cartlist"><i class="fas fa-shopping-cart"></i>({{ $cartCount }})</a>
+                </li> 
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/myorders">Orders</a>
                 </li>
 
 
@@ -70,11 +74,6 @@
                         @endif
                 </li>
 
-               
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/cartlist">Cart({{ $cartCount }})</a>
-                </li> 
 
             </ul>
 
