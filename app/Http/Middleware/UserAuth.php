@@ -24,6 +24,12 @@ class UserAuth
         }elseif($request->path() == "register" && $request->session()->has("user")) {
 
                 return redirect("/");
+        }elseif($request->path() == "cartlist" && !$request->session()->has("user")) {
+
+            return redirect("/login");
+        }elseif($request->path() == "myorders" && !$request->session()->has("user")) {
+
+            return redirect("/login");
         }
         
         
